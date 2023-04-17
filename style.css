@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #290361 0%, #a600ff 100%);
+  background-size: 300% 300%;
+  display: grid;
+  place-items: center;
+  animation: bgAnimation linear 7s infinite;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  padding: 4.8rem 6.4rem;
+  background: #ffffff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+.screen1 {
+  height: min(42.4rem, 90%);
+  width: min(42.8rem, 90%);
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #34355b;
+  margin-bottom: 1.4rem;
+}
+p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #34355b;
+}
+.imgClose:hover {
+  animation: shakeImage 0.6s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes shakeImage {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*Screen 2*/
+.screen2 {
+  width: 30rem;
+  height: 46.8rem;
+  text-align: center;
+}
+.boxText {
+  align-items: center;
+  padding: 1rem;
+  color: #000000;
+  width: 29.3rem;
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
+  animation: upBox 2s;
+}
+.boxText p {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #34355b;
+  margin-bottom: 1.7rem;
+}
+.imgOpen {
+  margin-bottom: 1.7rem;
+}
+button {
+  padding: 1.6rem;
+  gap: 1rem;
+  width: 17.4rem;
+  height: 5.2rem;
+  background: #ff9500;
+  border-radius: 0.4rem;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+button:hover {
+  background-color: #cf7a02;
+}
+@keyframes upBox {
+  0% {
+    transform: scale(0.3) translateY(30rem);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* BG animation*/
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
